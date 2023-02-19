@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet" crossorigin>    
+    <script src="https://kit.fontawesome.com/db56c14606.js" crossorigin="anonymous"></script>    
+   
+    <link href="reset.css" rel="stylesheet">
+    <link href="productos.css" rel="stylesheet">  
+
+    <title>Barberia Los pitucos</title>
+
+
+
+                    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        
+        
+        <script type='text/javascript'>
+        $(document).ready(function(){ 
+            $(window).scroll(function(){ 
+                if ($(this).scrollTop() > 100) { 
+                    $('#scroll').fadeIn(); 
+                } else { 
+                    $('#scroll').fadeOut(); 
+                } 
+            }); 
+            $('#scroll').click(function(){ 
+                $("html, body").animate({ scrollTop: 0 }, 600); 
+                return false; 
+            }); 
+        });
+        </script>
+        
+    
+</head>
+<body>
+    <a href="javascript:void(0);" id="scroll" title="Volver al inicio" style="display: none;">Top<span></span></a>
+
+    <header>
+        <div class="caja">
+         <div class="imagen-logo"><img class="imagen-header" src="imagenes/logo.jpg" alt="Marca Personal">
+         </div>
+
+         <div class="header-nav">
+            <nav class="nav-bar">
+                <ul class="lista-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contactos.html">Contacto</a></li>
+                </ul>
+            </nav> 
+         </div>          
+        </div>      
+    </header>   
+
+    <main>
+        <ul>
+        <li>
+            <h2>Barba</h2>
+            <img src="imagenes/barba.jpg">
+            <p class="descripcion">Maquina o tijera</p>
+            <p class="precio">$700</p>
+
+        </li>
+            
+        <li>
+            <h2>Cabello</h2>
+            <img src="imagenes/cabello.jpg">
+            <p class="descripcion">Maquina o tijera</p>
+            <p class="precio">$1000</p>
+         </li>
+           
+        <li>
+            <h2>Cabello + Barba</h2>
+            <img src="imagenes/cabello+barba.jpg">
+            <p class="descripcion">Maquina o tijera</p>
+            <p class="precio">$1500</p>
+        </li>
+        </ul>
+        
+    </main>
+
+    <footer>
+        <div class="container">
+          <div class="columnas-footer">
+            <div class="columna-footer">
+              <h4>Contacto</h4>
+              <p>123 Main St.</p>
+              <p>Ciudad, Estado, C.P.</p>
+              <p>Teléfono: (123) 456-7890</p>
+              <p>Email: info@barberia.com</p>
+            </div>
+            <div class="columna-footer">
+              <h4>Horario</h4>
+              <p>Lunes - Viernes: 9am - 7pm</p>
+              <p>Sábados: 9am - 5pm</p>
+              <p>Domingos: Cerrado</p>
+            </div>
+            <div class="columna-footer">
+              <h4>Síguenos</h4>
+              <ul class="social-icons">
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+</body>
+</html>

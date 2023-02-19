@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/db56c14606.js" crossorigin="anonymous"></script>    
+    <link href="reset.css" rel="stylesheet">
+    <link href="contactos.css" rel="stylesheet">
+    <title>Barberia los Pitucos</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script type='text/javascript'>
+        $(document).ready(function(){ 
+            $(window).scroll(function(){ 
+                if ($(this).scrollTop() > 100) { 
+                    $('#scroll').fadeIn(); 
+                } else { 
+                    $('#scroll').fadeOut(); 
+                } 
+            }); 
+            $('#scroll').click(function(){ 
+                $("html, body").animate({ scrollTop: 0 }, 600); 
+                return false; 
+            }); 
+        });
+        </script>
+</head>
+
+<body>
+    <a href="javascript:void(0);" id="scroll" title="Volver al inicio" style="display: none;">Volver arriba<span></span></a>
+
+    <header>
+        <div class="caja">
+         <div class="imagen-logo"><img class="imagen-header" src="imagenes/logo.jpg" alt="Marca Personal">
+         </div>
+
+         <div class="header-nav">
+            <nav class="nav-bar">
+                <ul class="lista-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contactos.html">Contacto</a></li>
+                </ul>
+            </nav> 
+         </div>          
+        </div>      
+    </header>   
+
+    <main>
+        <form>
+            <div class="formulario">
+                <label for="apellidoynombre">Apellido y Nombre</label>
+                <input class="clicks" type="text" id="apellidoynombre" required>
+
+                <label for="email">Ingrese su email</label>
+                <input class="clicks" type="email" id="email" required>
+
+                <label for="telefono">Ingrese su telefono de contacto</label>
+                <input class="clicks" type="tel" id="telefono" required>
+
+                <label for="mensaje">Ingrese su mensaje</label>
+                <textarea class="textarea"></textarea>
+
+                <p>¿Por qué medio desea ser contactado?</p>
+
+                <label for="correoelectronico"><input type="radio" value="correo" name="contacto"
+                        id="correoelectronico">Por correo electronico</label>
+
+                <label for="whatsapp"><input type="radio" value="whatsapp" name="contacto" id="whatsapp">Por
+                    WhatsApp</label>
+
+                <label for="llamada"><input type="radio" value="llamada" name="contacto" id="llamada">Por llamada
+                    telefonica</label>
+
+                <label for="newslatter"><input type="checkbox" value="newslatter" id="newslatter">Deseo recibir las
+                    novedades mensuales</label>
+            </div>
+
+            <div class="horariocontacto">
+
+                <p>¿En qué horario prefiere ser contactado?</p>
+                <select>
+                    <option>Mañana</option>
+                    <option>Tarde</option>
+                    <option>Noche</option>
+                </select>
+
+            </div>
+            <input type="submit" value="Enviar formulario" id="enviarformulario">
+        </form>
+    </main>
+
+
+    <footer>
+        <div class="container">
+          <div class="columnas-footer">
+            <div class="columna-footer">
+              <h4>Contacto</h4>
+              <p>123 Main St.</p>
+              <p>Ciudad, Estado, C.P.</p>
+              <p>Teléfono: (123) 456-7890</p>
+              <p>Email: info@barberia.com</p>
+            </div>
+            <div class="columna-footer">
+              <h4>Horario</h4>
+              <p>Lunes - Viernes: 9am - 7pm</p>
+              <p>Sábados: 9am - 5pm</p>
+              <p>Domingos: Cerrado</p>
+            </div>
+            <div class="columna-footer">
+              <h4>Síguenos</h4>
+              <ul class="social-icons">
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+</body>
+
+</html>
