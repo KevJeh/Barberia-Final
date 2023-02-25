@@ -1,38 +1,32 @@
 header {
-    
     background-color: #FFC107;
     padding: 20px 0;
-    
 }
 
 .caja {
-    display: flex; 
+    display: flex;
     justify-content: space-around;
 }
 
 header h1 {
-
     font-size: 36px;
     font-weight: bold;
-    color: #212121; 
+    color: #212121;
 }
 
 .imagen-logo {
     display: flex;
     width: 48%;
-    
 }
 
 .imagen-header {
-
-    width: 20%;
+    width: 10vh;
     border-radius: 15%;
     margin-left: 10%;
     padding: 2%;
 }
 
-.header-nav{
-
+.header-nav {
     display: flex;
     width: 30%;
     align-items: center;
@@ -46,10 +40,8 @@ header h1 {
     display: flex;
     width: 100%;
     justify-content: space-around;
-
-
-
 }
+
 nav a {
     text-transform: uppercase;
     font-weight: bold;
@@ -59,36 +51,63 @@ nav a {
     font-family: 'Poiret One', cursive;
 }
 
-
-main{
-    width: 940px;
+main {
+    width: 100%;
+    max-width: 940px;
     margin: 0 auto;
+    padding: 0 10px;
 }
 
-form{
+form {
     margin: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-form label{
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
     display: block;
     padding: 5px;
     font-family: 'Poiret One', cursive;
     font-weight: bold;
     font-size: 18px;
+    flex: 1 1 100%;
 }
 
-form input{ 
-    border-radius: 15px;
-}
 
-.textarea{
-    width: 394px;
-    height: 100px;
+.horariocontacto select,
+.clicks {
     border-radius: 15px;
     padding: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-#enviarformulario{
+form input {
+    border-radius: 15px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.textarea {
+    height: 150%;
+    width: 100%;
+}
+
+#enviarformulario {
     width: 40%;
     margin: 0 auto;
     font-family: 'Poiret One', cursive;
@@ -97,7 +116,7 @@ form input{
     padding: 12px;
 }
 
-nav a:hover{
+nav a:hover {
     color: blueviolet;
 }
 
@@ -113,33 +132,34 @@ footer {
     flex-direction: column;
 }
 
-.columnas-footer{
+.columnas-footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 2%;
 }
 
-.columna-footer{
-    height: 240px;
+.columna-footer {
+    height: auto;
 }
-  
+
 footer h4 {
     color: #fff;
     font-size: 18px;
     margin-top: 0;
     margin-bottom: 20px;
     font-family: 'Poiret One', cursive;
-
+    justify-content: center;
+    display: flex;
 }
-  
+
 footer p {
     font-size: 14px;
     color: #fff;
     padding: 20px;
     font-family: 'Poiret One', cursive;
 }
-  
+
 .social-icons {
     list-style: none;
     margin: 0;
@@ -222,7 +242,7 @@ form label:hover{
     border-width: 0.5px;
     border-style: solid;
     margin-bottom: 10px;
-    width: 400px;
+    width: 100%;
     font-family: 'Poiret One', cursive;
     font-weight: bold;
 }
@@ -265,28 +285,7 @@ form label:hover{
     cursor: pointer;
 }
 
-/*Tabla*/
 
-table{
-    margin: 40px 40px;
-    border-collapse: unset;
-    border-spacing: 3px;
-    
-}
-
-thead{
-    background: #3498db;
-}
-
-tbody{
-    background: #e74c3c;
-}
-
-th,td{
-    border: 1px solid black;
-    padding: 10px;
-    border-radius: 5px;
-}
 
 @media screen and (max-width: 480px){
     h1{
@@ -302,6 +301,75 @@ th,td{
 
     .textarea, #enviarformulario{
         width: 100%;
+    }
+
+    .menu-icono {
+    display: block;
+    }
+    
+    .lista-nav {
+    display: none;
+    }
+    
+    .lista-nav.active {
+    display: flex;
+    flex-direction: column;
+    }
+    
+    
+    .nav-bar {
+    width: 100%;
+    }
+    
+    .lista-nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: end;
+
+    }
+    
+    nav a {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    font-size: 22px;
+    text-decoration: none;
+    font-family: 'Poiret One', cursive;
+    }
+    
+    nav a:hover {
+    color: blueviolet;
+    }
+    
+    .menu-icono {
+    display: none;
+    }
+    
+    .menu-icono:before {
+    content: "\2261";
+    font-size: 28px;
+    color: black;
+    }
+    
+    .menu-icono:hover:before {
+    color: blueviolet;
+    }
+    
+    .header-nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    .columnas-footer{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        padding: 2%;
     }
 }
 
