@@ -327,6 +327,7 @@ footer p {
     flex-wrap: wrap;
     flex-direction: column;
     align-content: end;
+    margin-right: 10%;
     }
     
     nav a {
