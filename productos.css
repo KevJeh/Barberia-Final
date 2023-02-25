@@ -34,7 +34,7 @@ header h1 {
 .header-nav{
 
     display: flex;
-    width: 30%;
+    width: 50%;
     align-items: center;
 }
 
@@ -221,7 +221,7 @@ footer p {
     -ms-filter:"alpha(opacity=100)";
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 900px){
     h1{
         text-align: center;
     }
@@ -230,7 +230,7 @@ footer p {
     }
 
     main {
-        width: auto;
+        width: 90%;
     }
 
     main ul li{
